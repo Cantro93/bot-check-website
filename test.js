@@ -29,7 +29,7 @@ const server = http.createServer((req,res) => {
         break;
       case 'reject':
         res.writeHead(403, {'Content-Type': 'text/plain'});
-        res.end("Bye bye bot!");
+        res.end("Bots are blocked. Retry is possible after 5 minutes.");
         break;
       case 'do_auth':
         res.writeHead(200, {'Content-Type': 'text/html', 'Location': 'verify.html'});
