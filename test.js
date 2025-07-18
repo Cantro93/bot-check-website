@@ -29,4 +29,4 @@ const server = http.createServer((req,res) => {
   });
 });
 
-server.listen(3000, '192.168.1.108', () => {console.log("server started")});
+server.listen(80, 'bot-check.netlify.app', () => {console.log("server started")});
