@@ -13,7 +13,7 @@ const server = http.createServer((req,res) => {
     switch (auth_result.state) {
       case 'accept':
         res.writeHead(200, {'Content-Type': 'text/html', 'Location': 'index.html'});
-        res.end(require('fs').fsReadFileSync('index.html', 'utf8'));
+        res.end(require('fs').fsReadFileSync('internal-index.html', 'utf8'));
         break;
       case 'reject':
         res.writeHead(403, {'Content-Type': 'text/plain'});
