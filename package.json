@@ -1,7 +1,7 @@
 {
-  "name": "bot-check",
+  "name": "bot-check-website",
   "version": "1.0.0",
-  "description": "Simple CAPTCHA-like system for Node.js servers",
+  "description": "Website for simple CAPTCHA-like system for Node.js servers",
   "keywords": [
     "captcha"
   ],
@@ -16,8 +16,8 @@
   "license": "LGPL-2.1-or-later",
   "author": "Antoni Soltys",
   "type": "commonjs",
-  "main": "botcheck.js",
+  "main": "test.js",
   "scripts": {
-    "test": "node test.js"
+    "start": "node test.js"
   }
 }
