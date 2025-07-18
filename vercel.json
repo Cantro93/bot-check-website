@@ -1,3 +1,7 @@
 {
-  "framework": "other";
+  "framework": "other",
+  "buildCommand": "npm install",
+  "devCommand": "node ./test.js",
+  "installCommand": "npm install",
+  
 }
