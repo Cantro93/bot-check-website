@@ -1,5 +1,5 @@
 const http = require('http');
-const BotChecker = require('./botcheck');
+const BotChecker = require('../botcheck');
 
 global.bc = new BotChecker(300, '');
 
