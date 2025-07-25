@@ -93,7 +93,8 @@ class BotCheck
       // record exists and timeout has not occurred
       if (req.url.includes(`${sess.id}/info`) || req.url.includes(`${sess.id}/data`)) {
         sess.state = "reject";
-        sess.perm = true;
+        //sess.perm = true;
+        sess.perm = false;
         console.log(`${ip}: ${sess.id}: connection ${sess.state}ed.`);
         return {state: "reject", body: ""};
       };
