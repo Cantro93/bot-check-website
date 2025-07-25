@@ -7,6 +7,7 @@ const server = http.createServer((req,res) => {
   if (req.url.includes('favicon')) {
     res.writeHead(404);
     res.end();
+    return;
   }
   let data = '';
   req.on('data', chunk => {data += chunk.toString();});
