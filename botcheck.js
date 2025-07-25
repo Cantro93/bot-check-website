@@ -86,7 +86,7 @@ class BotCheck
     let ip = req.socket.remoteAddress;
     console.log(`Request from ${ip}`);
     // this complicated if checks whether entry for this IP exists and if it has expired
-    if (this.connections.has(ip) && this.sessionExpired(this.connections.get(ip)))
+    if (this.connections.has(ip) && !this.sessionExpired(this.connections.get(ip)))
     {
       let sess = this.connections.get(ip);
       console.log(`${ip}: Found session: ${sess}. Session expires on ${new Date(sess.time+this.timing)}. Now is ${new Date(Date.now())}`);
