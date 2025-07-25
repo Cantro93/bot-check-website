@@ -51,7 +51,7 @@ class BotCheck
   }
   loadTemplate(filename)
   {
-    this.templates.push(this.fs.readFileSync(this.joinPath(__dirname, filename), 'utf8'));
+    this.templates.push(this.fs.readFileSync(filename, 'utf8'));
   }
   getTemplate()
   {
