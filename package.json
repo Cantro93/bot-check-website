@@ -19,5 +19,8 @@
   "main": "test.js",
   "scripts": {
     "start": "node test.js"
+  },
+  "dependencies": {
+    "vercel": "^44.5.5"
   }
 }
