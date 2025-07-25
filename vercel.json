@@ -3,5 +3,5 @@
   "buildCommand": "npm install",
   "devCommand": "node ./test.js",
   "installCommand": "npm install",
-  
+  "rewrites": [{ "source": "/(.*)", "destination": "/api"}]
 }
