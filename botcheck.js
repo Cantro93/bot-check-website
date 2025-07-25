@@ -31,12 +31,12 @@ class BotCheck
     this.timing = time*1000;
 
     this.templates = [];
-    this.loadTemplate('./templates/basic.1.html');
-    this.loadTemplate('./templates/basic.2.html');
-    this.loadTemplate('./templates/4-answer.1.html');
-    this.loadTemplate('./templates/4-answer.2.html');
-    this.loadTemplate('./templates/4-answer.3.html');
-    this.loadTemplate('./templates/4-answer.4.html');
+    this.loadTemplate('./public/templates/basic.1.html');
+    this.loadTemplate('./public/templates/basic.2.html');
+    this.loadTemplate('./public/templates/4-answer.1.html');
+    this.loadTemplate('./public/templates/4-answer.2.html');
+    this.loadTemplate('./public/templates/4-answer.3.html');
+    this.loadTemplate('./public/templates/4-answer.4.html');
   }
   //generate new session entry
   mkSession() {
