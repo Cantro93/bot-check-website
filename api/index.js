@@ -4,6 +4,10 @@ const BotChecker = require('../botcheck');
 global.bc = new BotChecker(60, '');
 
 const server = http.createServer((req,res) => {
+  if (req.url.includes('favicon')) {
+    res.writeHead(404);
+    res.end();
+  }
   let data = '';
   req.on('data', chunk => {data += chunk.toString();});
   req.on('end', () => {
